@@ -357,7 +357,7 @@ def verify_image_label(args):
 
     except Exception as e:
         nc = 1
-        msg = f"{prefix}{im_file}: ignoring corrupt image/label: {e}"
+        msg = f"{prefix}{im_file}: ignoring corrupt bb image/label: {e}"
         return [None, None, None, None, None, nm, nf, ne, nc, msg]
 
 
